@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include riadco *.css
+recursive-include riadco *.csv
+recursive-include riadco *.html
+recursive-include riadco *.ico
+recursive-include riadco *.js
+recursive-include riadco *.json
+recursive-include riadco *.md
+recursive-include riadco *.png
+recursive-include riadco *.py
+recursive-include riadco *.svg
+recursive-include riadco *.txt
+recursive-exclude riadco *.pyc

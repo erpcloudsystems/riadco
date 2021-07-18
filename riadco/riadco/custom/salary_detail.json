@@ -1,0 +1,31 @@
+{
+ "custom_fields": [],
+ "custom_perms": [],
+ "doctype": "Salary Detail",
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2020-02-06 15:21:42.879557",
+   "default_value": null,
+   "doc_type": "Salary Detail",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "do_not_include_in_total",
+   "idx": 0,
+   "modified": "2020-02-06 15:21:42.879557",
+   "modified_by": "mghoneem10@gmail.com",
+   "name": "Salary Detail-do_not_include_in_total-fetch_from",
+   "owner": "mghoneem10@gmail.com",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "fetch_from",
+   "property_type": "Small Text",
+   "value": "salary_component.do_not_include_in_total"
+  }
+ ],
+ "sync_on_migrate": 1
+}

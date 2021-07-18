@@ -1,0 +1,101 @@
+{
+ "add_total_row": 0,
+ "creation": "2021-03-25 11:10:07.639010",
+ "disable_prepared_report": 1,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Defualt Letter",
+ "modified": "2021-07-03 13:10:28.139197",
+ "modified_by": "Administrator",
+ "module": "Riadco",
+ "name": "Production Sheet Summary",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select \n`tabSales Order`.name as \"Sales Order:Link/Sales Order:85\", \n`tabSales Order`.Customer as \"Customer::200\",\n`tabSales Order`.out_order_no as \"Out Order::80\",\n`tabSales Order`.creation as \"Order Date:Date:140\",\n`tabSales Order`.delivery_date as \"Delivery Date:Date:100\",\n`tabSales Order Item`.imported_ws as \"\u0645\u0633\u062a\u0648\u0631\u062f:Check:70\",\n`tabSales Order Item`.supplier_ws as \"\u0645\u0648\u0631\u062f \u062e\u0627\u0631\u062c\u064a:Check:80\",\n`tabSales Order Item`.artificial_ws as \"\u0635\u0646\u0627\u0639\u064a:Check:70\",\n`tabSales Order Item`.natural_ws as \"\u0637\u0628\u064a\u0639\u064a:Check:70\",\n`tabSales Order Item`.leather_ws as \"\u062a\u0646\u062c\u064a\u062f:Check:70\"\nfrom\n `tabSales Order` JOIN `tabSales Order Item` ON `tabSales Order`.name = `tabSales Order Item`.parent\nwhere\n `tabSales Order Item`.`parent` = `tabSales Order`.`name`\n and `tabSales Order`.docstatus = 1\n and `tabSales Order`.delivery_date between %(from_date)s and %(to_date)s\n order by `tabSales Order`.delivery_date desc",
+ "ref_doctype": "Sales Order",
+ "report_name": "Production Sheet Summary",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Sales Manager"
+  },
+  {
+   "role": "Maintenance User"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Stock Manager"
+  },
+  {
+   "role": "Branch Accountant"
+  },
+  {
+   "role": "Auditor"
+  },
+  {
+   "role": "Manufacturing User"
+  },
+  {
+   "role": "Fac2_stock_user"
+  },
+  {
+   "role": "Sales Master Manager"
+  },
+  {
+   "role": "Pricing"
+  },
+  {
+   "role": "Receivable Accountant"
+  },
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Purchase Manager"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Newsletter Manager"
+  },
+  {
+   "role": "Manufacturing Manager"
+  },
+  {
+   "role": "Stock Controller"
+  },
+  {
+   "role": "Territory Manager"
+  },
+  {
+   "role": "QC User"
+  },
+  {
+   "role": "Projects User"
+  },
+  {
+   "role": "Secretary"
+  },
+  {
+   "role": "Transport Manager"
+  },
+  {
+   "role": "Outdoor Following"
+  },
+  {
+   "role": "Projects Manager"
+  }
+ ]
+}
