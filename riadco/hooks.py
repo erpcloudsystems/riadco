@@ -11,6 +11,26 @@ app_color = "grey"
 app_email = "info@erpcloud.systems"
 app_license = "MIT"
 
+website_context = {
+	"disable_website_theme": True
+}
+homepage = "main"
+web_include_js = [
+    "/assets/riadco/js/jquery.min.js",
+    "/assets/riadco/js/bootstrap.min.js",
+    "/assets/riadco/js/material.min.js",
+    "/assets/riadco/js/moment.min.js",
+    "/assets/riadco/js/nouislider.min.js",
+    "/assets/riadco/js/bootstrap-datetimepicker.js",
+    "/assets/riadco/js/bootstrap-selectpicker.js",
+    "/assets/riadco/js/bootstrap-tagsinput.js",
+    "/assets/riadco/js/material-kit.js?v=1.2.1",
+    "/assets/riadco/js/jasny-bootstrap.min.js"
+    ]
+web_include_css = [
+    "/assets/riadco/css/material-kit.css?v=1.2.1",
+    "/assets/riadco/css/bootstrap.min.css"
+    ]
 # Includes in <head>
 # ------------------
 
