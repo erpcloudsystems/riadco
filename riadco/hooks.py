@@ -15,8 +15,13 @@ app_license = "MIT"
 # Includes in <head>
 # ------------------
 
+scheduler_events = {
+    "all": [
+        "single_events.allow_negative"
+    ]
+}
+
 # include js, css files in header of desk.html
-app_include_css = "/assets/riadco/css/deskar.min.css"
 # app_include_js = "/assets/riadco/js/riadco.js"
 
 # include js, css files in header of web template
