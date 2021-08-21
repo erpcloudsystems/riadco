@@ -17,7 +17,7 @@ app_license = "MIT"
 
 scheduler_events = {
     "all": [
-        "single_events.allow_negative"
+        "riadco.single_events.allow_negative"
     ]
 }
 
